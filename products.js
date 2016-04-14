@@ -22,7 +22,7 @@ var products = [
   },
 
   {
-    name: "Teach your dog to speak Japanese",
+    name: "Dog to Japanese",
     description: "With this handy dandy little translator teach your dog to speak Japanse.",
     price: "$39.99",
     URL: "images/japanese.jpg"
@@ -57,11 +57,7 @@ var products = [
   }
 ];
 
-console.log("products", products);
-
 var productsElements =  document.getElementById("product-content");
-console.log("productsElements", productsElements );
-
 
 for (var i = 0; i < products.length; i++) {
   var currentProduct = products[i];
@@ -69,17 +65,8 @@ for (var i = 0; i < products.length; i++) {
   productsElements.innerHTML +=
   '<div class="single-card">' +
     "<img src=\"" + currentProduct.URL + "\">" +
-    "<h2>" + currentProduct.name + "</h2>" +
-    "<p>" + currentProduct.description + "</p>" +
-    "<p>" + currentProduct.price + "</p>" +
+    "<div class=\"product-details\"><h2>" + currentProduct.name + "</h2>" +
+    "<div class=\"product-desc\"><p>" + currentProduct.description + "</p></div>" +
+    "<p class=\"product-price\">" + currentProduct.price + "</p></div>" +
   "</div>";
 }
-console.log("productsElements", productsElements );
-
-
-
-
-
-
-
-
