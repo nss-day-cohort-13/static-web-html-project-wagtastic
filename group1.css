@@ -3,19 +3,31 @@
 	box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
 	background-color: #ffaa00;
+  margin: 0 0 6.25rem 0;
+}
+
+img {
+  background-color: white;
+  padding: 0.75rem;
 }
 
 
 /*Heading*/
 h1 {
-	text-align: center;
-	font-family: 'Amatic SC', sans-serif;
-	font-size: 6rem;
-	background-color: #169acb;
-	margin: 0;
-	padding: 2% 10%;
+  text-align: center;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 6rem;
+  background-color: #169acb;
+  color: yellow;
+  margin: 0;
+  padding: 2% 6%;
 }
 
 
@@ -25,7 +37,6 @@ nav {
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-
 }
 
 nav ul {
@@ -52,9 +63,14 @@ nav ul li a {
 	text-decoration: none;
 	font-family: 'Amatic SC', sans-serif;
 	font-size: 3rem;
+  font-weight:  bold;
 }
 
 nav ul li a:hover {
+  color: #169acb;
+}
+
+.active-page {
 	color: #169acb;
 }
 
@@ -72,55 +88,130 @@ nav ul li a:hover {
 	margin: 0 6% 0 0;
 }
 
+.home-paragraphs p:nth-child(2n) {
+  margin-left: 3rem;
+}
+
+/*Products Page*/
+#product-content {
+  text-align: center;
+  font-family: sans-serif;;
+}
+
+.single-card {
+  vertical-align: top;
+  display: inline-block;
+  width: 22%;
+  height: 28rem;
+
+  background-color: #68d;
+  margin: 0.5rem;
+  padding: 0.75rem;
+}
+
+.single-card img {
+  width: 80%;
+}
+
+.product-details {
+  height: 45%;
+  vertical-align: bottom;
+}
+
+.product-details p:last-of-type {
+  vertical-align: bottom;
+}
+
+.product-desc {
+  text-align: left;
+}
+
+.product-price {
+  font-size:  1.2rem;
+  font-weight:  bold;
+}
+
 /*Contact Page Content*/
 .about-content,
 .contact-content {
 	margin: 0 auto;
 	width: 80%;
+  height: 100%;
 }
-
 
 .contact-info{
-	margin-top: 0 8% 0 10%;
-	float: left;
+  margin-top: 0 8% 0 10%;
+  float: left;
 }
-.contact-info p {
-	font-family: 'Amatic SC', sans-serif;
-	font-size: 2.5rem;
 
+.contact-info p {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 2.5rem;
+}
+
+.contact-label {
+  font-weight:  bold;
+  display: block;
 }
 
 .contact-content img{
-	float: right;
-	margin-top: 6rem;
-	width: 50%;
+  float: right;
+  margin-top: 6rem;
+  width: 50%;
+ }
 
+ .address p {
+  margin: 0.25rem 0;
+ }
+
+ .contact-info p:first-child {
+  margin-bottom: 0;
  }
 
 
 /*About Content*/
 .about-content {
-	font-family: 'Amatic SC', sans-serif;
-	font-size: 2rem;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .about-content img {
 	float: right;
 	width: 45%;
-	margin-left: 1rem;
+	margin-left: 1.5rem;
 	margin-top: 6rem;
 	margin-bottom: 1rem;
 }
 
+.about-content h2 {
+  margin-bottom: 0.5rem;
+}
+
+.about-content p {
+  margin-top: 0.5rem;
+}
 
 /*Footer*/
 footer {
 	clear: both;
 	font-family: 'Amatic SC', sans-serif;
-	font-size: 1rem;
-	text-align: center;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	font-size: 1.5rem;
+  font-weight: bolder;
+  letter-spacing: 0.125rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  background-color: firebrick;
+  color: yellow;
+
+  position: absolute;
+  height: 5rem;
+  bottom: 0;
+  width: 100%;
+}
+
+footer h3 {
+  margin: 0;
 }
 
 .clearfix:after {
@@ -128,13 +219,3 @@ footer {
 	clear: both;
 	display: table;
 }
-
-
-
-
-
-
-
-
-
-
